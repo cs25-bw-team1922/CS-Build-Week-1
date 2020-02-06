@@ -1,1 +1,1 @@
-web: gunicorn src.cluster.wsgi:application --log-file -
+web: gunicorn cluster.wsgi:application --log-file -
