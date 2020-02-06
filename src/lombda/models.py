@@ -28,3 +28,12 @@ class Character(models.Model):
     character_health = models.IntegerField(max_length=30)
     character_lives = models.IntegerField(max_length=30)
     character_save_stats = models.CharField(max_length=1000)
+
+
+class Items(models.Model):
+    item_name = models.CharField(max_length=30)
+    item_description = models.CharField(max_length=1000)
+    item_hackerlevel = models.IntegerField(max_length=30)
+    item_health = models.IntegerField(max_length=30)
+    item_power = models.IntegerField(max_length=30)
+    item_damage = models.IntegerField(max_length=30)
